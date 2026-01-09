@@ -1,0 +1,86 @@
+## Project Title:
+Web Scraping Application using Node.js, Puppeteer & Docker
+
+## Description:
+This project is a simple web scraping application developed using Node.js and Puppeteer.
+The application opens a website automatically, extracts basic information such as the page
+title and heading, and stores the scraped data in a JSON file.
+Docker is used to containerize the application for easy deployment.
+
+---
+
+## Technologies Used:
+- Node.js
+- Puppeteer
+- JavaScript
+- npm
+- Docker
+
+---
+
+## Project Structure:
+
+Devops Assignment/
+│── scrape.js
+│── package.json
+│── package-lock.json
+│── Dockerfile
+│── node_modules/
+│── scraped_data.json
+│── README.md
+
+---
+
+## How the Project Works
+1. Puppeteer launches a headless browser.
+2. The browser navigates to the given website.
+3. The page title and heading are extracted.
+4. The extracted data is saved into a JSON file.
+5. Docker runs the application inside a container.
+
+---
+
+## Installation
+Install the required dependencies using npm:
+1. npm install
+2. pip install flask
+
+## Running the Project (Without Docker)
+1. node scrape.js
+2. python server.python
+
+---
+
+## Running the Project Using Docker
+Build Docker Image
+docker build -t web-scraper .
+
+Run Docker Container
+docker run web-scraper
+
+---
+
+### Output
+* The scraped data is stored in a file named scraped_data.json.
+* The file contains the website title and heading information.
+
+Open browser and visit:
+http://127.0.0.1:8000/records
+
+---
+
+# Author
+Kiruthika M
+
+---
+
+## Conclusion
+This project demonstrates web scraping using Puppeteer and containerization using Docker.
+It provides hands-on experience with Node.js, automation, and DevOps fundamentals.
+
+---
+
+## Future Enhancements
+* Scrape additional data fields
+* Store scraped data in a database
+* Automate scraping using scheduling
